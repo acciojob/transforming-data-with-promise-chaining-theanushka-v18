@@ -1,5 +1,4 @@
-//your JS code here. If required.
-  let input = document.querySelector("#ip");
+ let input = document.querySelector("#ip");
       const button = document.querySelector("#btn");
       let output = document.querySelector("#output");
 
@@ -55,3 +54,10 @@
               }, 1000);
             });
           })
+          .then((result) => {
+            output.textContent = `Final Result: ${result}`;
+          });
+      }
+
+      // click event
+      button.addEventListener("click", PromiseChaining);
